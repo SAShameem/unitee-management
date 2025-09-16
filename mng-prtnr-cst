@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow"> <!-- Prevent search engines indexing -->
+  <title>UNITEE Management</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header {
+      background: #000;
+      padding: 15px 0;
+      text-align: center;
+    }
+    header img {
+      max-height: 60px;
+      width: auto;
+      object-fit: contain;
+    }
+    .main-section {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .option-card {
+      width: 250px;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .option-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    }
+    .footer-text {
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Password Prompt -->
+  <script>
+    const pass = prompt("Enter password to access UNITEE Management:");
+    if(pass !== "SAT@404170"){ // set your own password here
+      alert("Wrong password! Access denied.");
+      window.location.href = "about:blank";
+    }
+  </script>
+
+  <!-- Header -->
+  <header>
+    <img src="unitee.jpg" alt="UNITEE Logo"> <!-- replace with your optimized logo -->
+  </header>
+
+  <!-- Main Section -->
+  <div class="main-section text-center">
+    <h2 class="mb-4 fw-bold">UNITEE Management</h2>
+
+    <!-- Options as cards -->
+    <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+      <div class="card option-card text-center border-danger">
+        <a href="https://forms.cloud.microsoft/r/mkLqpY7t3z" target="_blank" class="stretched-link text-decoration-none text-danger fw-bold fs-5">
+          💰 খরচ এর জন্য
+        </a>
+      </div>
+      <div class="card option-card text-center border-success">
+        <a href="YOUR_INVESTMENT_FORM_LINK" target="_blank" class="stretched-link text-decoration-none text-success fw-bold fs-5">
+          📈 ইনভেস্টমেন্ট এর জন্য
+        </a>
+      </div>
+      <div class="card option-card text-center border-primary">
+        <a href="YOUR_CUSTOMER_FORM_LINK" target="_blank" class="stretched-link text-decoration-none text-primary fw-bold fs-5">
+          👤 কাস্টমার অ্যাড এর জন্য
+        </a>
+      </div>
+    </div>
+
+    <!-- Warning Text -->
+    <div class="text-center mt-4 mb-4">
+      <p class="text-muted fst-italic">
+        Any Unethical Behavior or changes can lead to legal troubles. Thank you.
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-2">
+    <p class="footer-text mb-0">© UNITEE - 2025 | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
